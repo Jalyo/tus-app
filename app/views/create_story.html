@@ -1,0 +1,16 @@
+<h1>Create your story</h1>
+<form ng-submit="save(story)">
+
+	<div>
+		<input type="date" 
+		ng-model="story.date" 
+		required
+		value="{{ date | date: 'yyyy-MM-dd' }}" />
+	</div>
+
+	<div>
+		<textarea ng-model="story.text" required></textarea>
+	</div>
+
+	<input type="submit" id="submit" value="Submit" />
+</form>
